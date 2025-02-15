@@ -1,0 +1,98 @@
+.Footer {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    height: auto; 
+    padding: 30px 0; 
+    margin: 20px;
+    border-top-left-radius:50px ;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px;
+  }
+  
+  .Section {
+    display: flex;
+    gap: 10%;
+    align-items: flex-start; 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .Section1{
+    /* text-align: center; */
+    padding: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Styling for Section2 */
+  .Section2 {
+    color: chocolate;
+    width: 100%; /* Ensures it takes the full width */
+    text-align: center; /* Center text and content inside */
+    margin-top: 10px;
+  }
+  .Name{
+    margin-left: 10px;
+  }
+  .Line{
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .Name3{
+    color:chocolate;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .box1{
+    margin-top: 59px;
+    display: flex;
+    gap:4%;
+  }
+  .box2, .box3{
+    display: flex;
+    gap:4%;
+    margin-top: 10px;
+  }
+  .line {
+    width: 100%; /* Full width of Section2 */
+    height: 1px; /* Line thickness */
+    background-color:chocolate;
+    margin: 0px 0; /* Adds space above and below the line */
+  }
+  
+  .Name {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .No{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20%;
+  }
+  
+  .Logo {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color:chocolate;
+    transition: color 0.3s ease;
+    margin-bottom: -20px;
+    margin-top: 10px;
+  }
+  
+  .Logo:hover {
+    color: chocolate; 
+  }
+  
+  
+  .Copy {
+    margin-top: 50px;
+    color:chocolate;
+    text-align: center;
+    font-size: 14px;
+  }

@@ -1,0 +1,149 @@
+/* ===== General Styles ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: darkgoldenrod;
+}
+
+/* Navigation */
+.Nav {
+    display: flex;
+    gap: 20px;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.Nav a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Contact Button */
+.Button {
+    color: white;
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 35px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Button:hover {
+    background-color: #d4a017;
+    color: white;
+}
+
+/* Mobile Menu Icon */
+.MenuIcon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .Container {
+        padding: 15px;
+    }
+    
+    .Nav a {
+        font-size: 16px;
+    }
+
+    .Button {
+        width: 110px;
+        height: 38px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .MenuIcon {
+        display: block;
+    }
+
+    .Nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .NavActive {
+        display: flex;
+    }
+
+    .Nav a {
+        font-size: 16px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .Button {
+        width: 100%;
+        max-width: 140px;
+        height: 40px;
+        margin: 10px auto;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .Container {
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .Nav a {
+        font-size: 14px;
+    }
+}

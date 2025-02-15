@@ -1,0 +1,143 @@
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(45deg, rgb(233, 153, 95), #fad0c4);
+        background-size: 200% 200%;
+    }
+    100% {
+        background: linear-gradient(45deg, rgb(202, 91, 13), #f5be86);
+    }
+} 
+body {
+    animation: backgroundAnimation 10s infinite alternate ease-in-out;
+    background-size: 400% 400%;
+}
+
+.Line{
+    color: rgb(145, 42, 42);
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.image img{
+    height: 400px;
+    margin-top: 40px;
+    width: 690px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 300px;
+}
+.Box1, .Box3{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Box2{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.image1 img, .image2 img, .image3 img{
+    height: 350px;
+    width: 450px;
+    border-radius: 12px;
+}
+.box1, .box3 {
+    background-color: rgb(230, 224, 224);
+    width: 290px;
+    height: 210px;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-left-radius: 40px; /* This is correct */
+    border-bottom:4px solid rgb(176, 50, 8);
+}
+
+.box2{
+    background-color: rgb(230, 224, 224);
+    width: 290px;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-right-radius: 40px; /* This is correct */
+    border-bottom: 4px solid rgb(176, 50, 8);
+
+}   
+.Name{
+   font-weight: bold;
+   margin-top: 15px;
+   color: sienna;
+   padding: 10px;
+}
+.Sent{
+   font-size: 12px;
+   margin-top: 15px;
+}
+.button{
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 2rem;
+}
+.button:hover{
+    background-color: rgb(247, 168, 65);
+}
+.Name{
+    font-weight: bold;
+    font-size: 20px;
+}
+@media (max-width: 1024px) {
+
+    .Line{
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .image img {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .Box1, .Box2, .Box3 {
+        flex-wrap: wrap; /* Allows wrapping for better layout */
+    }
+
+    .image1 img, .image3 img {
+        width: 80%;
+        height: auto;
+        margin-left: 20px;
+        border-radius: 2rem;
+        padding: 20px;
+    }
+    .image2 img{
+        width: 80%;
+        height: auto;
+        margin-left: 20px;
+        border-radius: 2rem;
+        padding: 20px;
+        /* border-top-right-radius: 0px; */
+    }
+    .box1, .box2, .box3 {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+}

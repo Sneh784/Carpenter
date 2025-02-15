@@ -1,0 +1,186 @@
+/* General Styling */
+.Container {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.Name {
+    font-weight: bold;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Line {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gallery Box */
+.Box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between images */
+    padding: 30px;
+    margin: 10px;
+}
+
+/* Image Styling */
+.image img {
+    border-radius: 2rem;
+    padding: 10px;
+    height: 220px;
+    width: 230px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+/* Section11 for Additional Content */
+.Section11 {
+    margin-left: 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Contact Section */
+.Section1 {
+    background-color: chocolate;
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Number {
+    font-size: 18px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    height: 35px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Container {
+        margin-top: 50px;
+    }
+
+    .Name {
+        font-size: 28px;
+    }
+
+    .Line {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .image img {
+        height: 200px;
+        width: 290px;
+    }
+
+    .Box1, .Section11 {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Section1 {
+        height: 70px;
+        font-size: 14px;
+    }
+    .Section1 {
+        height: auto;
+        /* padding: 10px; */
+    }
+
+    .Box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Number {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .button {
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    .Name {
+        font-size: 24px;
+    }
+
+    .Line {
+        font-size: 13px;
+    }
+
+    .image img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .button {
+        font-size: 16px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .Section1 {
+        height: 60px;
+        font-size: 12px;
+    }
+} */
