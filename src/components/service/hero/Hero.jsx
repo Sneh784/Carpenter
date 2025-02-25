@@ -7,6 +7,12 @@ function Hero() {
   return (
     <div className={styles.Hero}>
       <div className={styles.Container}>
+      <div className={styles.Section3}>
+            <div className={styles.image3}>
+                <img src="https://i.pinimg.com/736x/13/ff/e9/13ffe9863e957e1e1208b42fa5745b7b.jpg"/>
+            </div>
+            <div className={styles.Name11}>SERVICES</div>
+            </div>
         <div className={styles.Section}>
             <div className={styles.Box}>
                 <div className={styles.box}>
@@ -34,12 +40,12 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className={styles.Section3}>
+            {/* <div className={styles.Section3}>
             <div className={styles.image3}>
                 <img src="https://i.pinimg.com/736x/13/ff/e9/13ffe9863e957e1e1208b42fa5745b7b.jpg"/>
             </div>
             <div className={styles.Name11}>SERVICES</div>
-            </div>
+            </div> */}
         </div>
       </div>
     </div>

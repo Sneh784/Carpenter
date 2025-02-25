@@ -24,10 +24,11 @@ body {
     background-color: white;
 }
 
-/* Logo */
+
 .logo {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: -18px; 
     color: darkgoldenrod;
 }
 
@@ -63,6 +64,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    margin-top: -5px;
 }
 
 .Button:hover {

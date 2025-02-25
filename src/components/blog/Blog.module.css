@@ -1,0 +1,115 @@
+
+.Container{
+    background-image: url("https://i.pinimg.com/736x/33/bc/da/33bcdac0d686e5b82d08d607e1fa6b86.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 100%;
+    height: 400px; 
+    color: white;
+}
+.Word{
+    font-weight: bold;
+    font-size: 50px;
+    /* color:white; */
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Name{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Line{
+    font-size: 14px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sent{
+    /* color: white; */
+    font-size: 14px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.Section1, .Section2, .Section3{
+    display: flex;
+    color: black;
+    margin: 50px;
+    padding:20px;
+     /* margin-left: -10px; 
+    gap: 0.2px;
+    /* font-weight: bold; */
+}
+
+.image img{
+    height: 240px;
+    width: 350px;
+    /* margin-top: 10px; */
+    border-radius: 10px;
+   
+}
+
+.image img:hover{
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+.Button{
+    color: white;
+}
+.Box4{
+      display: flex;
+      margin-top: 20px;
+}
+.logo{
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .Container {
+        width: 330px;
+        padding: 30px;
+    }
+
+    .Word {
+        font-size: 32px;
+        padding: 15px;
+    }
+    .Name {
+        font-size: 18px;
+    }
+
+    .Sent {
+        font-size: 12px;
+    }
+
+    .Container {
+        height: auto;
+        padding: 30px;
+    }
+
+    .Section1, .Section2, .Section3 {
+        margin: 20px;
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Box, .Box2, .Box3{
+        margin-top: 10px;
+    }
+    .image img {
+        max-width: 100%; /* Makes images scale properly on smaller screens */
+    }
+    .Button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 110px;
+    }
+}

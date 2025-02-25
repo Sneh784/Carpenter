@@ -12,7 +12,7 @@ function Navbar() {
         <div className={styles.Container}>
           {/* Logo */}
           {/* <div className={styles.logo}>Sneha</div> */}
-          <Link to="/aboutus" className={styles.logo}>Sneha</Link>
+          <Link to="/Home" className={styles.logo}>WoodCraft</Link>
           {/* Mobile Menu Toggle */}
           <div className={styles.MenuIcon} onClick={() => setIsMobile(!isMobile)}>
             {isMobile ? <FaTimes /> : <FaBars />}
@@ -20,8 +20,10 @@ function Navbar() {
 
           {/* Navigation Links */}
           <div className={`${styles.Nav} ${isMobile ? styles.NavActive : ""}`}>
+            <Link to="/home" onClick={() => setIsMobile(false)}>Home</Link>
             <Link to="/aboutus" onClick={() => setIsMobile(false)}>About Us</Link>
             <Link to="/services" onClick={() => setIsMobile(false)}>Services</Link>
+            <Link to="/blog" onClick={() => setIsMobile(false)}>Blog</Link>
             <Link to="/contact" onClick={() => setIsMobile(false)}>Contact</Link>
             <div className={styles.Button} onClick={() => setIsMobile(false)}>Contact</div>
           </div>
